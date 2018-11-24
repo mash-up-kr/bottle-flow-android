@@ -26,8 +26,7 @@ import android.content.Context.LOCATION_SERVICE
  */
 class LocationHelper {
 
-    var lastLocation: Location? = null
-        private set
+    lateinit var lastLocation: Location; private set
     private var mLocationManager: LocationManager = BottleApp.appContext.getSystemService(LOCATION_SERVICE) as LocationManager
     private var locationInformed: Boolean = false
 
@@ -68,8 +67,8 @@ class LocationHelper {
             val geocoder = Geocoder(context, Locale.getDefault())
             try {
                 return geocoder.getFromLocation(
-                    lastLocation!!.latitude,
-                    lastLocation!!.longitude, 1
+                    lastLocation.latitude,
+                    lastLocation.longitude, 1
                 )
             } catch (ioException: IOException) {
                 ioException.printStackTrace()
@@ -126,8 +125,8 @@ class LocationHelper {
     }
 
     companion object {
-        private val LOCATION_REFRESH_PEROID = 1000
-        private val LOCATION_REFRESH_DIST = 1
+        private const val LOCATION_REFRESH_PEROID = 1000
+        private const val LOCATION_REFRESH_DIST = 1
     }
 
 }
