@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
+        android:background="@color/white0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,129 +9,158 @@
         tools:context=".MainActivity">
 
     <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_sun_cloud"
+            android:id="@+id/mainSunCloud"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.050000012"/>
+    <ImageView
             android:id="@+id/mainSeaBackground5"
             android:layout_width="0dp"
-            android:layout_height="@dimen/SIZE_32"
-            app:srcCompat="@color/blue5"
+            android:layout_height="@dimen/SIZE_320"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_long_sea_5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintBottom_toTopOf="@id/mainSeaBackground4"
-            tools:ignore="MissingConstraints"/>
-    <ImageView
-            android:id="@+id/main_bottle_5"
-            android:layout_width="@dimen/SIZE_48"
-            android:layout_height="@dimen/SIZE_60"
-            android:layout_marginBottom="@dimen/SIZE_16"
-            app:srcCompat="@drawable/ic_bottle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.88"
-            app:layout_constraintBottom_toTopOf="@id/mainSeaBackground3"/>
+            app:layout_constraintBottom_toBottomOf="@+id/mainSeaBackground1"
+            app:layout_constraintTop_toBottomOf="@+id/mainSunCloud"
+            app:layout_constraintVertical_bias="0.14"/>
+
     <ImageView
             android:id="@+id/mainSeaBackground4"
             android:layout_width="0dp"
-            android:layout_height="@dimen/SIZE_48"
-            app:srcCompat="@color/blue4"
+            android:layout_height="@dimen/SIZE_300"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_long_sea_4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintBottom_toTopOf="@id/mainSeaBackground3"/>
-
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mainSeaBackground5"/>
     <ImageView
-            android:id="@+id/main_bottle_4"
+            android:id="@+id/mainBottle5"
+            android:layout_width="@dimen/SIZE_48"
+            android:layout_height="@dimen/SIZE_70"
+            android:layout_marginBottom="@dimen/SIZE_16"
+            android:layout_marginEnd="@dimen/SIZE_16"
+            app:srcCompat="@drawable/ic_bottle_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/mainSeaBackground2"/>
+    <ImageView
+            android:id="@+id/mainBottle6"
             android:layout_width="@dimen/SIZE_48"
             android:layout_height="@dimen/SIZE_60"
-            android:layout_marginBottom="@dimen/SIZE_48"
-            app:srcCompat="@drawable/ic_bottle"
+            android:layout_marginBottom="@dimen/SIZE_16"
+            android:layout_marginStart="72dp"
+            app:srcCompat="@drawable/ic_bottle_5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.11"
-            app:layout_constraintBottom_toTopOf="@id/mainSeaBackground2"/>
+            app:layout_constraintBottom_toTopOf="@+id/mainSeaBackground2"/>
     <ImageView
             android:id="@+id/mainSeaBackground3"
             android:layout_width="0dp"
-            android:layout_height="@dimen/SIZE_60"
-            app:srcCompat="@color/blue3"
+            android:layout_height="@dimen/SIZE_320"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_long_sea_3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/mainSeaBackground2"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mainSeaBackground5"
+            app:layout_constraintVertical_bias="0.5"/>
     <ImageView
-            android:id="@+id/main_bottle_3"
+            android:id="@+id/mainBottle3"
             android:layout_width="@dimen/SIZE_56"
             android:layout_height="@dimen/SIZE_70"
-            android:layout_marginBottom="@dimen/SIZE_48"
-            app:srcCompat="@drawable/ic_bottle"
+            android:layout_marginStart="@dimen/SIZE_120"
+            android:layout_marginBottom="@dimen/SIZE_92"
+            app:srcCompat="@drawable/ic_bottle_3"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mainSeaBackground2"
+            app:layout_constraintBottom_toTopOf="@+id/mainSeaBackground1"/>
+    <ImageView
+            android:id="@+id/mainBottle4"
+            android:layout_width="@dimen/SIZE_48"
+            android:layout_height="@dimen/SIZE_60"
+            android:layout_marginEnd="@dimen/SIZE_92"
+            android:layout_marginBottom="@dimen/SIZE_110"
+            app:srcCompat="@drawable/ic_bottle_4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.653"
-            app:layout_constraintBottom_toTopOf="@id/mainSeaBackground1"/>
+            app:layout_constraintBottom_toTopOf="@+id/mainSeaBackground1"/>
     <ImageView
             android:id="@+id/mainSeaBackground2"
             android:layout_width="0dp"
-            android:layout_height="@dimen/SIZE_80"
-            app:srcCompat="@color/blue2"
+            android:layout_height="@dimen/SIZE_240"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_long_sea_2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/mainSeaBackground1"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mainSeaBackground3"/>
     <ImageView
-            android:id="@+id/main_bottle_2"
+            android:id="@+id/mainBottle2"
             android:layout_width="@dimen/SIZE_60"
             android:layout_height="@dimen/SIZE_70"
-            android:layout_marginBottom="@dimen/SIZE_70dp"
-            app:srcCompat="@drawable/ic_bottle"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="@dimen/SIZE_120"
+            android:layout_marginEnd="@dimen/SIZE_32"
+            app:srcCompat="@drawable/ic_bottle_2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.88"
-            app:layout_constraintBottom_toTopOf="@id/mainSeaBackground0"/>
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+            android:id="@+id/mainBottle1"
+            android:layout_width="@dimen/SIZE_60"
+            android:layout_height="@dimen/SIZE_80"
+            android:layout_marginBottom="@dimen/SIZE_100"
+            android:layout_marginStart="@dimen/SIZE_152"
+            app:srcCompat="@drawable/ic_bottle_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
     <ImageView
             android:id="@+id/mainSeaBackground1"
             android:layout_width="0dp"
-            android:layout_height="@dimen/SIZE_100"
-            app:srcCompat="@color/blue1"
+            android:layout_height="@dimen/SIZE_160"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_long_sea_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/mainSeaBackground0"
-            app:layout_constraintHorizontal_bias="0.0"/>
-    <ImageView
-            android:id="@+id/main_bottle_1"
-            android:layout_width="@dimen/SIZE_60"
-            android:layout_height="@dimen/SIZE_80"
-            app:srcCompat="@drawable/ic_bottle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.273"
-            android:layout_marginBottom="@dimen/SIZE_80"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintBottom_toBottomOf="parent"/>
-    <ImageView
-            android:id="@+id/mainSeaBackground0"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            app:srcCompat="@color/blue0"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"/>
 
-    <Button
+    <ImageView
             android:id="@+id/fbtn_main_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/SIZE_60"
+            android:layout_height="@dimen/SIZE_60"
             android:layout_marginEnd="@dimen/SIZE_8"
             android:layout_marginBottom="@dimen/SIZE_32"
+            android:src="@drawable/circle_white"
             app:layout_constraintHorizontal_chainStyle="packed"
-            app:srcCompat="@android:drawable/presence_online"
-            app:layout_constraintStart_toStartOf="@id/mainSeaBackground0"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/fbtn_main_write"/>
-    <Button
-            android:id="@+id/fbtn_main_write"
+            app:layout_constraintEnd_toStartOf="@id/fbtn_main_write"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black3"
+            android:lineSpacingExtra="1.3sp"
+            android:text="@string/main_search_btn"
+            app:layout_constraintTop_toTopOf="@+id/fbtn_main_search"
+            app:layout_constraintStart_toStartOf="@+id/fbtn_main_search"
+            app:layout_constraintBottom_toBottomOf="@+id/fbtn_main_search"
+            app:layout_constraintEnd_toEndOf="@+id/fbtn_main_search"/>
+    <ImageView
+            android:id="@+id/fbtn_main_write"
+            android:layout_width="@dimen/SIZE_60"
+            android:layout_height="@dimen/SIZE_60"
             android:layout_marginStart="@dimen/SIZE_8"
-            app:srcCompat="@android:drawable/ic_input_add"
+            android:background="@drawable/circle_white"
+            app:srcCompat="@android:drawable/ic_menu_add"
             app:layout_constraintStart_toEndOf="@+id/fbtn_main_search"
-            app:layout_constraintEnd_toEndOf="@id/mainSeaBackground0"
-            app:layout_constraintBottom_toBottomOf="@+id/fbtn_main_search"/>
+            app:layout_constraintBottom_toBottomOf="@+id/fbtn_main_search"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

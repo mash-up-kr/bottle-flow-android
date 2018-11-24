@@ -4,6 +4,17 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <color name="black0">#000000</color>
+    <color name="black1">#ec000000</color>
+    <color name="black2">#ed000000</color>
+    <color name="black3">#666666</color>
+
+    <color name="white0">#ffffff</color>
+    <color name="white1">#e7e6e6</color>
+    <color name="white2">#b9b7b7</color>
+    <color name="white3">#8b8b8b</color>
+
+
     <color name="blue0">#0380a1</color>
     <color name="blue1">#2d9fbe</color>
     <color name="blue2">#49b0cc</color>
