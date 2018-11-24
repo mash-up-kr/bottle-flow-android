@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-        android:background="@color/white0"
+        android:background="@color/main_background"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,14 +11,36 @@
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_sun_cloud"
-            android:id="@+id/mainSunCloud"
+            app:srcCompat="@drawable/ic_sun"
+            android:id="@+id/mainSun"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.050000012"/>
+            app:layout_constraintVertical_bias="0.100000024"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_cloud_1"
+            android:id="@+id/mainCloud1"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.100000024"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_cloud_2"
+            android:id="@+id/mainCloud2"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.100000024"/>
     <ImageView
             android:id="@+id/mainSeaBackground5"
             android:layout_width="0dp"
@@ -28,7 +50,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="@+id/mainSeaBackground1"
-            app:layout_constraintTop_toBottomOf="@+id/mainSunCloud"
+            app:layout_constraintTop_toBottomOf="@+id/mainSun"
             app:layout_constraintVertical_bias="0.14"/>
 
     <ImageView
@@ -36,11 +58,11 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/SIZE_300"
             android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/SIZE_12"
             app:srcCompat="@drawable/ic_long_sea_4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="@+id/mainSeaBackground5"/>
     <ImageView
             android:id="@+id/mainBottle5"

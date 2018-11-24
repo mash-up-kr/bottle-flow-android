@@ -19,12 +19,16 @@ class MainActivity : AppCompatActivity() {
         var bottle2 : Animation = AnimationUtils.loadAnimation (this, R.anim.bottle2)
         var bottle3 : Animation = AnimationUtils.loadAnimation (this, R.anim.bottle3)
         var sun : Animation = AnimationUtils.loadAnimation (this, R.anim.sun)
+        var cloud1 : Animation = AnimationUtils.loadAnimation (this, R.anim.cloud1)
+        var cloud2 : Animation = AnimationUtils.loadAnimation (this, R.anim.cloud2)
         mainBottle1.startAnimation(bottle1)
         mainBottle2.startAnimation(bottle1)
         mainBottle3.startAnimation(bottle2)
         mainBottle4.startAnimation(bottle2)
         mainBottle5.startAnimation(bottle3)
         mainBottle6.startAnimation(bottle3)
-        mainSunCloud.startAnimation(sun)
+        mainSun.startAnimation(sun)
+        mainCloud1.startAnimation(cloud1)
+        mainCloud2.startAnimation(cloud2)
     }
 }
