@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">bottleflow</string>
+    <string name="unable_get_locaiton">Cannot get location info.</string>
+    <string name="no_last_location_info">There is no last saved location information.</string>
 </resources>
