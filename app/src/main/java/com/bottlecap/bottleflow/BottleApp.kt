@@ -11,11 +11,12 @@ class BottleApp : Application() {
     }
 
     companion object {
-        var application: Application? = null
+        @JvmStatic
+        lateinit var application: Application
             private set
 
         val appContext: Context
-            get() = application!!.applicationContext
+            get() = application.applicationContext
     }
 
 }

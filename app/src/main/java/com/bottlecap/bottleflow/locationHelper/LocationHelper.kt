@@ -24,12 +24,11 @@ import android.content.Context.LOCATION_SERVICE
  * 생성 후 requestLocation로 위치 요청 및 콜백메서드를 통해 위치 요청 결과를 받아올 수 있다.
  * 사용을 위해 COARSE & FINE LOCATION 권한이 반드시 필요하며 스플래시 스크린에서 꼭 권한 따길 바람.
  */
-class LocationHelper(context: Activity) {
+class LocationHelper {
 
-    // getters
     var lastLocation: Location? = null
         private set
-    private var mLocationManager: LocationManager? = null
+    private var mLocationManager: LocationManager = BottleApp.appContext.getSystemService(LOCATION_SERVICE) as LocationManager
     private var locationInformed: Boolean = false
 
     private var mLocationReadyListener: ILocationReadyListener? = null
@@ -42,7 +41,7 @@ class LocationHelper(context: Activity) {
                 locationInformed = true
             }
 
-            mLocationManager!!.removeUpdates(this)
+            mLocationManager.removeUpdates(this)
         }
 
         override fun onStatusChanged(provider: String, status: Int, extras: Bundle) {
@@ -68,22 +67,18 @@ class LocationHelper(context: Activity) {
             val context = BottleApp.appContext
             val geocoder = Geocoder(context, Locale.getDefault())
             try {
-
                 return geocoder.getFromLocation(
                     lastLocation!!.latitude,
                     lastLocation!!.longitude, 1
                 )
             } catch (ioException: IOException) {
                 ioException.printStackTrace()
+            } catch (exception : Exception) {
+                exception.printStackTrace()
             }
 
             return null
         }
-
-    init {
-        mLocationManager = context.getSystemService(LOCATION_SERVICE) as LocationManager
-        locationInformed = false
-    }
 
     /**
      * 위치를 1회 요청한다. 요청 성공시 위치 반환 콜백을 준 후 리스너 제거함 (오직 1회 요청)
@@ -118,11 +113,11 @@ class LocationHelper(context: Activity) {
 
             return false
         }
-        mLocationManager!!.requestLocationUpdates(
+        mLocationManager.requestLocationUpdates(
             LocationManager.GPS_PROVIDER, LOCATION_REFRESH_PEROID.toLong(),
             LOCATION_REFRESH_DIST.toFloat(), mLocationListener
         )
-        mLocationManager!!.requestLocationUpdates(
+        mLocationManager.requestLocationUpdates(
             LocationManager.NETWORK_PROVIDER, LOCATION_REFRESH_PEROID.toLong(),
             LOCATION_REFRESH_DIST.toFloat(), mLocationListener
         )
