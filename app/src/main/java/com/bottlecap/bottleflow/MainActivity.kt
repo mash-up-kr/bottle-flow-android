@@ -8,6 +8,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        yujeong("dbwjd")
+    }
+    fun yujeong(a: String) {
+        System.out.println(a)
     }
 
     //Jujin First Commit
