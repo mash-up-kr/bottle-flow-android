@@ -47,7 +47,7 @@
             android:layout_width="@dimen/SIZE_48"
             android:layout_height="@dimen/SIZE_70"
             android:layout_marginBottom="@dimen/SIZE_16"
-            android:layout_marginEnd="@dimen/SIZE_16"
+            android:layout_marginEnd="@dimen/SIZE_24"
             app:srcCompat="@drawable/ic_bottle_6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/mainSeaBackground2"/>
@@ -55,7 +55,7 @@
             android:id="@+id/mainBottle6"
             android:layout_width="@dimen/SIZE_48"
             android:layout_height="@dimen/SIZE_60"
-            android:layout_marginBottom="@dimen/SIZE_16"
+            android:layout_marginBottom="@dimen/SIZE_24"
             android:layout_marginStart="72dp"
             app:srcCompat="@drawable/ic_bottle_5"
             app:layout_constraintStart_toStartOf="parent"
@@ -131,7 +131,7 @@
             app:layout_constraintBottom_toBottomOf="parent"/>
 
     <ImageView
-            android:id="@+id/fbtn_main_search"
+            android:id="@+id/fbtnMainSearch"
             android:layout_width="@dimen/SIZE_60"
             android:layout_height="@dimen/SIZE_60"
             android:layout_marginEnd="@dimen/SIZE_8"
@@ -139,7 +139,7 @@
             android:src="@drawable/circle_white"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/fbtn_main_write"
+            app:layout_constraintEnd_toStartOf="@id/fbtnMainWrite"
             app:layout_constraintStart_toStartOf="parent"/>
     <TextView
             android:layout_width="wrap_content"
@@ -148,19 +148,19 @@
             android:textColor="@color/black3"
             android:lineSpacingExtra="1.3sp"
             android:text="@string/main_search_btn"
-            app:layout_constraintTop_toTopOf="@+id/fbtn_main_search"
-            app:layout_constraintStart_toStartOf="@+id/fbtn_main_search"
-            app:layout_constraintBottom_toBottomOf="@+id/fbtn_main_search"
-            app:layout_constraintEnd_toEndOf="@+id/fbtn_main_search"/>
+            app:layout_constraintTop_toTopOf="@+id/fbtnMainSearch"
+            app:layout_constraintStart_toStartOf="@+id/fbtnMainSearch"
+            app:layout_constraintBottom_toBottomOf="@+id/fbtnMainSearch"
+            app:layout_constraintEnd_toEndOf="@+id/fbtnMainSearch"/>
     <ImageView
-            android:id="@+id/fbtn_main_write"
+            android:id="@+id/fbtnMainWrite"
             android:layout_width="@dimen/SIZE_60"
             android:layout_height="@dimen/SIZE_60"
             android:layout_marginStart="@dimen/SIZE_8"
             android:background="@drawable/circle_white"
             app:srcCompat="@android:drawable/ic_menu_add"
-            app:layout_constraintStart_toEndOf="@+id/fbtn_main_search"
-            app:layout_constraintBottom_toBottomOf="@+id/fbtn_main_search"
+            app:layout_constraintStart_toEndOf="@+id/fbtnMainSearch"
+            app:layout_constraintBottom_toBottomOf="@+id/fbtnMainSearch"
             app:layout_constraintEnd_toEndOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>
