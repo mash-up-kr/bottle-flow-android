@@ -10,5 +10,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // 최상희2
+        yujeong("dbwjd")
+
     }
+    fun yujeong(a: String) {
+        System.out.println(a)
+    }
+
+    //Jujin First Commit
 }
